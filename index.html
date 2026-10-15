@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 괌 4인 가족 6박 7일 럭셔리 투어 프로모션</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            800: '#0369a1',
+                            900: '#0f172a',
+                            950: '#020617'
+                        },
+                        gold: {
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(2, 6, 23, 0.6), rgba(2, 6, 23, 0.85)), url('https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-sky-500 selection:text-white">
+
+    <!-- Top Navigation -->
+    <nav class="sticky top-0 z-50 glass-card border-b border-slate-800/80 px-4 lg:px-12 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-gold-500 flex items-center justify-center shadow-lg shadow-sky-500/30">
+                <i class="fa-solid fa-umbrella-beach text-slate-950 font-bold text-lg"></i>
+            </div>
+            <div>
+                <span class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Guam Premium Expert Series</span>
+                <h1 class="text-lg font-bold tracking-tight text-white">광명 ➔ 괌 4인 가족 6박 7일 마스터피스</h1>
+            </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+            <a href="#overview" class="hover:text-sky-400 transition">개요 & 이동편</a>
+            <a href="#hotels" class="hover:text-sky-400 transition">최고급 숙박</a>
+            <a href="#activities" class="hover:text-sky-400 transition">추천 액티비티</a>
+            <a href="#itinerary" class="hover:text-sky-400 transition">상세 일정</a>
+            <a href="#calculator" class="hover:text-sky-400 transition">예상 경비 계산기</a>
+        </div>
+        <div>
+            <button onclick="scrollToSection('calculator')" class="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-sky-500/25 transition flex items-center space-x-2 text-sm">
+                <i class="fa-solid fa-calculator"></i>
+                <span>경비 산출하기</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-[85vh] flex items-center justify-center text-center px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+        <div class="max-w-4xl mx-auto z-10 space-y-6">
+            <div class="inline-flex items-center space-x-2 bg-sky-500/10 border border-sky-500/30 px-4 py-1.5 rounded-full text-sky-400 text-xs font-semibold tracking-wide uppercase">
+                <i class="fa-solid fa-star text-gold-400"></i>
+                <span>20년차 전문가 추천 2026 괌 최고급 가족 패키지</span>
+            </div>
+            <h2 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-tight">
+                에메랄드빛 낙원, <br class="hidden sm:inline"><span class="gold-gradient-text">괌(Guam)</span>에서 펼쳐지는 완벽한 휴식
+            </h2>
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+                경기도 광명 출발부터 인천공항, 괌 현지 6박 7일 최고급 리조트 스테이와 프라이빗 액티비티까지. 4인 가족을 위한 가장 품격 있는 프리미엄 여행 가이드입니다.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <button onclick="scrollToSection('itinerary')" class="w-full sm:w-auto bg-white text-slate-950 hover:bg-slate-100 font-bold px-8 py-3.5 rounded-xl shadow-xl transition flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-calendar-days text-sky-600"></i>
+                    <span>6박 7일 일정 보기</span>
+                </button>
+                <button onclick="scrollToSection('hotels')" class="w-full sm:w-auto glass-card hover:bg-slate-800/80 text-white font-semibold px-8 py-3.5 rounded-xl transition flex items-center justify-center space-x-2 border border-slate-700">
+                    <i class="fa-solid fa-hotel text-gold-400"></i>
+                    <span>호텔 정보 확인</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- Section 1 & 6: Overview & Transportation (광명 -> 인천공항 -> 괌 공항 -> 호텔) -->
+        <section id="overview" class="space-y-10">
+            <div class="text-center space-y-3">
+                <h3 class="text-sky-400 font-semibold tracking-wider uppercase text-sm">Seamless Journey</h3>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">광명 출발부터 호텔 체크인까지의 최선 동선</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">여행의 피로를 최소화하고 안전하고 쾌적하게 괌에 도착하는 프리미엄 이동 솔루션입니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="glass-card p-6 rounded-2xl relative border-t-4 border-t-sky-500 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 font-bold flex items-center justify-center">01</div>
+                    <h4 class="text-lg font-bold text-white flex items-center space-x-2">
+                        <i class="fa-solid fa-car text-sky-400"></i>
+                        <span>경기도 광명 ➔ 인천공항</span>
+                    </h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        광명역 또는 자택에서 출발. KTX 광명역 도심공항터미널 활용 혹은 프리미엄 공항 콜밴·택시(약 1시간 20분 소요)를 이용하여 인천공항 제2여객터미널로 직행.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="glass-card p-6 rounded-2xl relative border-t-4 border-t-sky-500 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 font-bold flex items-center justify-center">02</div>
+                    <h4 class="text-lg font-bold text-white flex items-center space-x-2">
+                        <i class="fa-solid fa-plane-departure text-sky-400"></i>
+                        <span>인천공항 ➔ 괌 공항</span>
+                    </h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        대한항공/진에어/제주에어 등 직항편 탑승 (약 4시간 30분 소요). 기내식 및 사전 좌석 지정(패밀리 존) 서비스를 통해 쾌적한 비행 환경 제공.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="glass-card p-6 rounded-2xl relative border-t-4 border-t-gold-500 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center">03</div>
+                    <h4 class="text-lg font-bold text-white flex items-center space-x-2">
+                        <i class="fa-solid fa-passport text-gold-400"></i>
+                        <span>괌 안토니오 B. 원팻 공항</span>
+                    </h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        ESTA(이스타) 사전 신청 시 무사번 패스너로 초고속 입국 심사 통과. 4인 가족 맞춤형 짐 찾기 및 현지 가이드 미팅.
+                    </p>
+                </div>
+                <!-- Step 4 -->
+                <div class="glass-card p-6 rounded-2xl relative border-t-4 border-t-gold-500 space-y-4">
+                    <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 font-bold flex items-center justify-center">04</div>
+                    <h4 class="text-lg font-bold text-white flex items-center space-x-2">
+                        <i class="fa-solid fa-hotel text-gold-400"></i>
+                        <span>공항 ➔ 투몬 리조트 이동</span>
+                    </h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        공항에서 투몬 시내 리조트까지 단 15분 소요! 사전 예약된 VIP 단독 픽업 밴을 통해 아이들과 함께 안전하고 편안하게 호텔 체크인.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Accommodation (최고 시설의 숙박 정보) -->
+        <section id="hotels" class="space-y-10">
+            <div class="text-center space-y-3">
+                <h3 class="text-sky-400 font-semibold tracking-wider uppercase text-sm">Luxury Stays</h3>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">4인 가족 맞춤형 최고급 숙박 시설</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">전 객실 오션뷰와 최상급 인피니티 풀을 갖춘 괌 최고의 럭셔리 호텔을 만나보세요.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Hotel 1: Tsubaki Tower -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-sky-500/50 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="츠바키 타워" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 right-4 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-gold-400 flex items-center space-x-1">
+                                <i class="fa-solid fa-star"></i>
+                                <span>최고급 6성급</span>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h4 class="text-xl font-bold text-white">더 츠바키 타워 (The Tsubaki Tower)</h4>
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                투몬 북단 건비치에 위치한 괌 최고급 럭셔리 호텔. 전 객실 압도적인 오션뷰 발코니와 인피니티 풀, 품격 있는 다이닝을 자랑합니다.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">전 객실 오션뷰</span>
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">인피니티 풀</span>
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">키즈 프렌들리</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="w-full bg-slate-900/80 border border-slate-700/60 rounded-xl p-3 text-center text-sm font-semibold text-sky-400">
+                            추천 객실: 카밀리아 스위트 / 디럭스 오션뷰
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 2: Dusit Thani Guam Resort -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-sky-500/50 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="두짓타니 리조트" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 right-4 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-gold-400 flex items-center space-x-1">
+                                <i class="fa-solid fa-star"></i>
+                                <span>특급 리조트</span>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h4 class="text-xl font-bold text-white">두짓타니 괌 리조트 (Dusit Thani)</h4>
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                투몬 비치 중심가에 위치하여 쇼핑, 맛집 접근성이 최고인 리조트. 태국 전통의 럭셔리 스파(데완라 스파)와 환상적인 수영장 보유.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">투몬 중심가</span>
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">데완라스파</span>
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">비치 바로 연결</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="w-full bg-slate-900/80 border border-slate-700/60 rounded-xl p-3 text-center text-sm font-semibold text-sky-400">
+                            추천 객실: 클럽 오션프론트 룸
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 3: Lotte Hotel Guam -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-sky-500/50 transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80" alt="롯데호텔 괌" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-4 right-4 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-gold-400 flex items-center space-x-1">
+                                <i class="fa-solid fa-star"></i>
+                                <span>패밀리 선호</span>
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h4 class="text-xl font-bold text-white">롯데호텔 괌 (Lotte Hotel Guam)</h4>
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                한국인 관광객에게 최고의 만족도를 주는 타워 타워 및 키즈 라운지 보유. 조용하고 아름다운 투몬 북쪽 해변을 만끽할 수 있는 곳.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">키즈플레이룸</span>
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">라테스 타워</span>
+                                <span class="bg-slate-800 text-sky-300 text-xs px-2.5 py-1 rounded-lg">가족 휴양 최적</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="w-full bg-slate-900/80 border border-slate-700/60 rounded-xl p-3 text-center text-sm font-semibold text-sky-400">
+                            추천 객실: 타워윙 오션프론트
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Activities (가장 추천하는 액티비티 활동) -->
+        <section id="activities" class="space-y-10">
+            <div class="text-center space-y-3">
+                <h3 class="text-sky-400 font-semibold tracking-wider uppercase text-sm">Exciting Adventures</h3>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">4인 가족 추천 괌 베스트 액티비티</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">아이들과 부모님이 모두 감탄하는 안전하고 짜릿한 괌 해양 액티비티 톱픽입니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Activity 1 -->
+                <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-sky-500/50 transition">
+                    <div class="h-40 rounded-xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="돌핀크루즈" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-4">
+                            <span class="text-xs font-bold text-sky-300 bg-sky-950/80 px-2.5 py-1 rounded-md">필수 코스</span>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">돌핀 와칭 & 선셋 디너크루즈</h4>
+                    <p class="text-sm text-slate-300">야생 돌고래를 만나는 스릴과 환상적인 바다 위 선셋 바베큐 디너 파티.</p>
+                </div>
+                <!-- Activity 2 -->
+                <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-sky-500/50 transition">
+                    <div class="h-40 rounded-xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="스노클링" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-4">
+                            <span class="text-xs font-bold text-sky-300 bg-sky-950/80 px-2.5 py-1 rounded-md">가족 추천</span>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">피시아이 해양공원 수중전망대</h4>
+                    <p class="text-sm text-slate-300">스노클링이나 스쿠버다이빙 없이도 수심 10m 바닷속 열대어를 생생하게 관람.</p>
+                </div>
+                <!-- Activity 3 -->
+                <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-sky-500/50 transition">
+                    <div class="h-40 rounded-xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=80" alt="정글투어" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-4">
+                            <span class="text-xs font-bold text-gold-300 bg-amber-950/80 px-2.5 py-1 rounded-md">어드벤처</span>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">타포차우 산 정글 리버 크루즈</h4>
+                    <p class="text-sm text-slate-300">원시 정글 속 강을 따라 탐험하며 차모로 전통 문화와 원주민 쇼 체험.</p>
+                </div>
+                <!-- Activity 4 -->
+                <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-sky-500/50 transition">
+                    <div class="h-40 rounded-xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=600&q=80" alt="스카이다이빙" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent flex items-end p-4">
+                            <span class="text-xs font-bold text-emerald-300 bg-emerald-950/80 px-2.5 py-1 rounded-md">익스트림</span>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold text-white">스카이다이빙 & 패러세일링</h4>
+                    <p class="text-sm text-slate-300">하늘에서 내려다보는 괌 전경과 투몬 비치 상공을 가르는 짜릿한 해양 스포츠.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Itinerary (4인 가족 6박 7일 여행 일정) -->
+        <section id="itinerary" class="space-y-10">
+            <div class="text-center space-y-3">
+                <h3 class="text-sky-400 font-semibold tracking-wider uppercase text-sm">Master Schedule</h3>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">4인 가족 완벽 6박 7일 타임라인 일정표</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">휴식과 액티비티, 그리고 쇼핑이 완벽하게 조화된 20년차 전문가 설계 일정입니다.</p>
+            </div>
+
+            <!-- Tabs Navigation for Days -->
+            <div class="flex flex-wrap justify-center gap-2" id="day-tabs">
+                <button onclick="switchDay(1)" class="day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-sky-500 text-white shadow-md transition" data-day="1">Day 1: 출국 및 입국</button>
+                <button onclick="switchDay(2)" class="day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition" data-day="2">Day 2: 투몬 해변 & 돌핀</button>
+                <button onclick="switchDay(3)" class="day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition" data-day="3">Day 3: 남부 투어</button>
+                <button onclick="switchDay(4)" class="day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition" data-day="4">Day 4: 해양스포츠</button>
+                <button onclick="switchDay(5)" class="day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition" data-day="5">Day 5: 쇼핑 & 스파</button>
+                <button onclick="switchDay(6)" class="day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition" data-day="6">Day 6: 리조트 힐링</button>
+                <button onclick="switchDay(7)" class="day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition" data-day="7">Day 7: 귀국</button>
+            </div>
+
+            <!-- Tab Content Container -->
+            <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-6">
+                <div id="day-content" class="space-y-6">
+                    <!-- Dynamic populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Expense Calculator (예상 여행 경비 목록 및 계산기) -->
+        <section id="calculator" class="space-y-10">
+            <div class="text-center space-y-3">
+                <h3 class="text-sky-400 font-semibold tracking-wider uppercase text-sm">Cost Estimation</h3>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">4인 가족 6박 7일 예상 여행 경비 산출기</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">항공, 숙박, 렌터카, 액티비티 예상 비용을 실시간으로 계산해보세요.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Calculator Inputs -->
+                <div class="lg:col-span-2 glass-card rounded-2xl p-6 sm:p-8 space-y-6">
+                    <h4 class="text-xl font-bold text-white border-b border-slate-800 pb-4 flex items-center space-x-2">
+                        <i class="fa-solid fa-sliders text-sky-400"></i>
+                        <span>경비 항목 설정 (단위: 원)</span>
+                    </h4>
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">왕복 항공권 (4인 기준)</label>
+                            <input type="number" id="calc-flight" value="2400000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white font-semibold focus:outline-none focus:border-sky-500" oninput="calculateTotal()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">숙박비 (최고급 리조트 6박)</label>
+                            <input type="number" id="calc-hotel" value="3500000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white font-semibold focus:outline-none focus:border-sky-500" oninput="calculateTotal()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">렌터카 및 주유 / 픽업 교통비</label>
+                            <input type="number" id="calc-transport" value="650000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white font-semibold focus:outline-none focus:border-sky-500" oninput="calculateTotal()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">액티비티 (돌핀크루즈, 피시아이 등)</label>
+                            <input type="number" id="calc-activity" value="800000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white font-semibold focus:outline-none focus:border-sky-500" oninput="calculateTotal()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-1">식비 및 쇼핑 / 기타 예비비</label>
+                            <input type="number" id="calc-other" value="2000000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white font-semibold focus:outline-none focus:border-sky-500" oninput="calculateTotal()">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator Summary Receipt -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-sky-500/30 bg-gradient-to-b from-slate-900/90 to-slate-950/90">
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                            <h4 class="text-lg font-bold text-white">여행 경비 요약</h4>
+                            <span class="text-xs text-sky-400 font-semibold bg-sky-500/10 px-2.5 py-1 rounded-md">4인 가족 기준</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex justify-between"><span>항공권:</span> <span id="summary-flight" class="font-semibold text-white">2,400,000원</span></li>
+                            <li class="flex justify-between"><span>숙박 (6박):</span> <span id="summary-hotel" class="font-semibold text-white">3,500,000원</span></li>
+                            <li class="flex justify-between"><span>교통/렌트:</span> <span id="summary-transport" class="font-semibold text-white">650,000원</span></li>
+                            <li class="flex justify-between"><span>액티비티:</span> <span id="summary-activity" class="font-semibold text-white">800,000원</span></li>
+                            <li class="flex justify-between"><span>식비/쇼핑:</span> <span id="summary-other" class="font-semibold text-white">2,000,000원</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 space-y-4">
+                        <div>
+                            <span class="text-xs text-slate-400 block uppercase">총 예상 경비</span>
+                            <div class="text-3xl font-extrabold gold-gradient-text" id="summary-total">9,350,000원</div>
+                        </div>
+                        <button onclick="showAlert('예약 상담 신청이 성공적으로 접수되었습니다. 20년차 전문 컨설턴트가 24시간 내 연락드립니다!')" class="w-full bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition">
+                            전문가 맞춤 견적 상담 신청
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Custom Message Box Modal (Replacer for alert) -->
+    <div id="custom-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="glass-card max-w-md w-full p-6 rounded-2xl border border-sky-500/40 text-center space-y-4 shadow-2xl">
+            <div class="w-12 h-12 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center mx-auto text-xl">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">알림</h3>
+            <p id="modal-message" class="text-sm text-slate-300 leading-relaxed"></p>
+            <button onclick="closeModal()" class="w-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold py-2.5 rounded-xl transition">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass-card border-t border-slate-800 py-12 px-4 text-center text-sm text-slate-400 space-y-4 mt-20">
+        <div class="flex justify-center space-x-6">
+            <a href="#overview" class="hover:text-white transition">이동편</a>
+            <a href="#hotels" class="hover:text-white transition">숙박정보</a>
+            <a href="#activities" class="hover:text-white transition">액티비티</a>
+            <a href="#itinerary" class="hover:text-white transition">일정표</a>
+            <a href="#calculator" class="hover:text-white transition">경비계산기</a>
+        </div>
+        <p>&copy; 2026 Guam Luxury Family Tour Guide. Designed by 20-Year App Script & Travel Expert.</p>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Itinerary Data for 6 Days / 7 Nights
+        const itineraryData = {
+            1: {
+                title: "Day 1: 경기도 광명 출발 ➔ 인천공항 ➔ 괌 입국 및 리조트 체크인",
+                items: [
+                    { time: "08:00", title: "광명 출발", desc: "자택 또는 KTX 광명역에서 프리미엄 공항 콜밴 탑승하여 인천공항 제2여객터미널로 이동 (약 1시간 20분 소요)." },
+                    { time: "10:00", title: "인천공항 도착 및 탑승수속", desc: "패밀리 패스트 트랙을 통한 수속 및 면세점 쇼핑 후 항공기 탑승." },
+                    { time: "13:30", title: "인천공항 출발 ➔ 괌 공항", desc: "대한항공/저비용항공사 직항편 탑승 (약 4시간 30분 소요). 기내 휴식 및 입국 신고서 작성." },
+                    { time: "19:00", title: "괌 공항 도착", desc: "ESTA 패스로 초고속 입국 심사 완료. 현지 가이드 미팅 및 단독 픽업 밴 탑승." },
+                    { time: "20:00", title: "호텔 체크인 및 휴식", desc: "더 츠바키 타워 또는 두짓타니 리조트 체크인 후 오션뷰 객실에서 여유로운 휴식." }
+                ]
+            },
+            2: {
+                title: "Day 2: 투몬 해변 산책 & 오션뷰 조식 & 돌핀 크루즈 어드벤처",
+                items: [
+                    { time: "08:30", title: "리조트 조식 뷔페", desc: "세계적인 셰프가 준비하는 프리미엄 조식 뷔페 및 투몬 바다 조망." },
+                    { time: "10:30", title: "돌핀 와칭 & 스노클링 투어", desc: "전문 크루와 함께 출항하여 야생 돌고래 떼를 만나고 바다 수영 및 스노클링 체험." },
+                    { time: "14:00", title: "중식 및 T갤러리아 쇼핑", desc: "투몬 시내 명가 레스토랑 중식 후 세계 명품 브랜드 쇼핑." },
+                    { time: "18:30", title: "선셋 바베큐 디너", desc: "해변가에서 즐기는 로맨틱한 선셋 바베큐 파티와 라이브 공연 감상." }
+                ]
+            },
+            3: {
+                title: "Day 3: 괌 남부 프라이벳 렌터카 드라이브 & 역사 탐방",
+                items: [
+                    { time: "09:30", title: "렌터카 인수 및 남부 드라이브", desc: "4인 가족 SUV 렌터카 인수 후 탁 트인 해안 도로 드라이브 시작." },
+                    { time: "11:00", title: "솔레다드 요새 & 우바 폭포", desc: "스페인 식민지 시대의 요새에서 바다 전망 감상 및 자연 정취 만끽." },
+                    { time: "13:00", title: "이나라한 자연 풀장", desc: "화산암으로 둘러싸인 천연 수영장에서 안전한 아이들 물놀이 및 인생샷 촬영." },
+                    { time: "17:00", title: "사랑의 절벽 (Two Lovers Point)", desc: "일몰 시각에 맞춰 방문하여 투몬만을 내려다보는 환상적인 석양 감상." }
+                ]
+            },
+            4: {
+                title: "Day 4: 해양 액티비티 총정리 (피시아이 & 패러세일링)",
+                items: [
+                    { time: "09:00", title: "피시아이 해양공원", desc: "수중전망대에서 10m 바닷속 신비로운 열대어 생태계 관람." },
+                    { time: "12:00", title: "차모로 전통 뷔페 중식", desc: "현지 특유의 바베큐와 코코넛 요리를 맛볼 수 있는 뷔페 식사." },
+                    { time: "14:30", title: "패러세일링 & 바나나보트", desc: "하늘 높이 날아오르는 패러세일링으로 투몬 에메랄드빛 바다 조망." },
+                    { time: "19:00", title: "시내 맛집 디너 (비치인슈림프)", desc: "괌 필수 맛집에서 새우 요리와 시원한 맥주로 저녁 식사." }
+                ]
+            },
+            5: {
+                title: "Day 5: 마이크로네시아 몰 쇼핑 & 키즈 테라피 & 스파",
+                items: [
+                    { time: "10:00", title: "마이크로네시아 몰 & GPO 쇼핑", desc: "ROSS 및 대형 쇼핑몰에서 가족 의류, 기념품, 장난감 스마트 쇼핑." },
+                    { time: "14:00", title: "리조트 키즈클럽 & 수영장 자유 이용", desc: "부모님은 인피니티 풀 카바나 휴식, 아이들은 전문 키즈 프로그램 참여." },
+                    { time: "18:00", title: "데완라 스파 (아로마 마사지)", desc: "온 가족이 피로를 말끔히 해소하는 프리미엄 스파 테라피." }
+                ]
+            },
+            6: {
+                title: "Day 6: 리조트 풀캉스 & 프라이빗 파티 & 석양 감상",
+                items: [
+                    { time: "09:30", title: "여유로운 오전 수영장 스테이", desc: "체크아웃 전 리조트 전용 풀장에서 마음껏 물놀이 및 선베드 휴식." },
+                    { time: "13:00", title: "현지 로컬 카페 및 브런치", desc: "투몬 감성 카페에서 여유로운 브런치 타임." },
+                    { time: "16:00", title: "건비치 선셋 산책", desc: "조용하고 아름다운 건비치 모래사장 산책하며 가족 사진 촬영." },
+                    { time: "19:30", title: "파인 다이닝 만찬", desc: "괌 여행의 하이밤을 기념하는 최고급 코스 요리 만찬." }
+                ]
+            },
+            7: {
+                title: "Day 7: 최종 짐 정리, 괌 공항 면세 쇼핑 및 귀국 (인천 ➔ 광명)",
+                items: [
+                    { time: "09:00", title: "체크아웃 및 공항 이동", desc: "리조트 체크아웃 후 픽업 차량 탑승하여 괌 국제공항으로 이동." },
+                    { time: "11:30", title: "괌 공항 면세점 쇼핑", desc: "출국 수속 후 면세점 기념품 및 초콜릿 쇼핑." },
+                    { time: "14:00", title: "괌 공항 출발 ➔ 인천공항", desc: "귀국 항공편 탑승 (약 4시간 50분 소요)." },
+                    { time: "18:00", title: "인천공항 도착 및 광명 복귀", desc: "인천공항 입국 후 공항 콜밴/택시 이용하여 경기도 광명 자택으로 안전 복귀." }
+                ]
+            }
+        };
+
+        function switchDay(dayNum) {
+            // Update Tab Styles
+            document.querySelectorAll('.day-tab').forEach(btn => {
+                if(btn.getAttribute('data-day') == dayNum) {
+                    btn.className = "day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-sky-500 text-white shadow-md transition";
+                } else {
+                    btn.className = "day-tab px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 transition";
+                }
+            });
+
+            // Render Content
+            const data = itineraryData[dayNum];
+            let html = `<h4 class="text-xl font-bold text-white border-b border-slate-800 pb-3">${data.title}</h4>`;
+            html += `<div class="space-y-4 pt-2">`;
+            data.items.forEach(item => {
+                html += `
+                    <div class="flex items-start space-x-4 bg-slate-900/60 p-4 rounded-xl border border-slate-800/80">
+                        <span class="bg-sky-500/20 text-sky-400 font-bold px-3 py-1 rounded-lg text-xs whitespace-nowrap">${item.time}</span>
+                        <div>
+                            <h5 class="font-bold text-white text-sm sm:text-base">${item.title}</h5>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">${item.desc}</p>
+                        </div>
+                    </div>
+                `;
+            });
+            html += `</div>`;
+            document.getElementById('day-content').innerHTML = html;
+        }
+
+        // Initialize First Day on Load
+        window.onload = function() {
+            switchDay(1);
+            calculateTotal();
+        }
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function calculateTotal() {
+            const flight = parseInt(document.getElementById('calc-flight').value) || 0;
+            const hotel = parseInt(document.getElementById('calc-hotel').value) || 0;
+            const transport = parseInt(document.getElementById('calc-transport').value) || 0;
+            const activity = parseInt(document.getElementById('calc-activity').value) || 0;
+            const other = parseInt(document.getElementById('calc-other').value) || 0;
+
+            const total = flight + hotel + transport + activity + other;
+
+            document.getElementById('summary-flight').innerText = flight.toLocaleString() + '원';
+            document.getElementById('summary-hotel').innerText = hotel.toLocaleString() + '원';
+            document.getElementById('summary-transport').innerText = transport.toLocaleString() + '원';
+            document.getElementById('summary-activity').innerText = activity.toLocaleString() + '원';
+            document.getElementById('summary-other').innerText = other.toLocaleString() + '원';
+            document.getElementById('summary-total').innerText = total.toLocaleString() + '원';
+        }
+
+        function showAlert(msg) {
+            document.getElementById('modal-message').innerText = msg;
+            const modal = document.getElementById('custom-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('custom-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
